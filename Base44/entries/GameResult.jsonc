@@ -1,0 +1,40 @@
+{
+  "name": "GameResult",
+  "type": "object",
+  "properties": {
+    "player_id": {
+      "type": "string"
+    },
+    "player_name": {
+      "type": "string"
+    },
+    "campus": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number",
+      "default": 0
+    },
+    "best_combo": {
+      "type": "number",
+      "default": 0
+    },
+    "accuracy": {
+      "type": "number",
+      "default": 0
+    },
+    "lives_remaining": {
+      "type": "number",
+      "default": 0
+    },
+    "played_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "player_name",
+    "campus",
+    "score"
+  ]
+}

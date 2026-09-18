@@ -1,0 +1,37 @@
+{
+  "name": "Player",
+  "type": "object",
+  "properties": {
+    "internal_player_identity": {
+      "type": "string",
+      "description": "Stable identity: campus + niat id (not displayed publicly)"
+    },
+    "player_name": {
+      "type": "string"
+    },
+    "campus": {
+      "type": "string"
+    },
+    "best_score": {
+      "type": "number",
+      "default": 0
+    },
+    "best_combo": {
+      "type": "number",
+      "default": 0
+    },
+    "best_accuracy": {
+      "type": "number",
+      "default": 0
+    },
+    "niat_id_hash": {
+      "type": "string",
+      "description": "Non-reversible hash of the NIAT id, never displayed"
+    }
+  },
+  "required": [
+    "internal_player_identity",
+    "player_name",
+    "campus"
+  ]
+}
